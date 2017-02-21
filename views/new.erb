@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel = './public/stylesheet' href = 'style.css'/>
+</head>
+<body class = "body" >
+
+<form method = "POST" action="/pizzas"> 
+
+  <label for = "first-name">First Name:</label>
+  <input type = "text" 
+  name= "first_name"
+  id= "first-name"/ > <!-- name property must match the hash from the object/db--> 
+
+  <label for ="last-name">Last Name</label>
+  <input type = "text"
+  id = "last-name" 
+  name = "last_name" />
+
+  <label for = "pizza-select"> Select Pizza:</label>
+  <select id = "pizza-select" name ="topping">
+    <option value = "Margherita">Margherita</option>
+    <option value = "Calzone">Calzone</option>
+    <option value = "Peperoni">Peperoni</option>
+  </select>
+
+
+  <label for = "quantity">Quantity:</label>
+  <input  min="1" step = "1" type ="number" name="quantity" id ="quantity"/>
+
+  <input type = "submit" value="Place Order"/>
+</form>
+</body>
+</html>
